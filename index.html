@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie List Website</title>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="icon" href="./img/favicon.ico">
+</head>
+<body id="body">
+    <header>
+        <div class="logo">
+            <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
+        </div>
+        <div class="wrapper">
+            <form id="form">
+                <input type="text" placeholder="Search" id="search" class="search">
+            </form>
+            <label class="switch">
+                <input type="checkbox" id="mode-toggle"/>
+                <span class="checkmark"></span>
+            </label>
+        </div>
+        <button class="nav-toggle hamburger" aria-label="toggle navigation" onclick="this.classList.toggle('active');"></button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <h1 class="nav__item--header">appreciating great movies of our time</h1>
+                </li>
+                <li class="nav__item nav__item--gif">
+                    <img src="./img/Oscar.gif" alt="spinning oscar gif" id="gif">
+                </li>
+                <li class="nav__item">
+                    <h2 class="nav__item--email"><a href="mailto:william.tanardi@gmail.com">william.tanardi@gmail.com</a></h2>
+                    <div class="nav__item--socials">
+                        <a href="https://www.instagram.com/williamtanardi/" target="_blank" rel="noopener norefferer"><i class="fab fa-instagram fa-3x"></i></a>
+                        <a href="https://www.linkedin.com/in/william-t-478205204/" target="_blank" rel="noopener norefferer"><i class="fab fa-linkedin-in fa-3x"></i></a>
+                        <a href="https://github.com/WTanardi" target="_blank" rel="noopener norefferer"><i class="fab fa-github fa-3x"></i></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <div class="movie">
+            <img src="https://images.unsplash.com/photo-1535016120720-40c646be5580?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="Image">
+            <div class="movie-info">
+                <h3>Title</h3>
+                <span class="green">Rating</span>
+            </div>
+            <div class="overview">
+                <h3>Overview</h3>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint amet labore ducimus facilis libero commodi facere dolor provident magnam itaque, quia consequuntur natus reprehenderit illo.
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h2 class="nav__item--email foot"><a href="mailto:william.tanardi@gmail.com">william.tanardi@gmail.com</a></h2>
+        <div class="nav__item--socials foot">
+            <a href="https://www.instagram.com/williamtanardi/" target="_blank" rel="noopener norefferer"><i class="fab fa-instagram fa-3x"></i></a>
+            <a href="https://www.linkedin.com/in/william-t-478205204/" target="_blank" rel="noopener norefferer"><i class="fab fa-linkedin-in fa-3x"></i></a>
+            <a href="https://github.com/WTanardi" target="_blank" rel="noopener norefferer"><i class="fab fa-github fa-3x"></i></a>
+        </div>
+    </footer>
+    <script src="./script.js" defer></script>
+</body>
+</html>
+
+<!--
+MMMMMMMMMMMMMMMMMMMMW0o;,,;lOXNNWMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMWk'.:do,..,;;cxXWMMMMMMMMMWN0OkOXWMMMMMMM
+MMMMMMMMMMMMMMMMMMMXc.;0Nd'.:ool,.:0WMMMMMMWXd;',,',oKMMMMMM
+MMMMMMMMMMMMMMMMMMMNo.,kx..dNWWWO'.oWMMMMMWKc.,xKKx,.lXMMMMM
+MMMMMMMMMMMMMMMMMMMMO,.,'.cXMMMM0'.oWMMMMMXl.;OWMMXl.;0MMMMM
+MMMMMMMWX0O0KNMMMMMMNx.  ,0WMMMWk..xWMMMMWx..xWMMWK:.cXMMMMM
+MMMMMWKl'','':ONMMMMMXl..lNMMMMXl.,OWMMMM0;.cXMMMWx..kWMMMMM
+MMMMMXc.,x0Ol..dNMMMMXo.,OWMMMM0; .oNMMMNo.,OMMMMXc.:KMMMMMM
+MMMMM0;.lXMMNd.'kNMMM0,.oNMMMMMk.  'kWMWx..dNMMMWk'.xNMMMMMM
+MMMMMXo.,OWMMXl.,OWMXo.,OWMMMWNd....;0WK:.:KMMMMXc.;KMMMMMMM
+MMMMMM0,.lNMMMK:.;0WO'.oNMMMMKk:.:x;.:Oo.,OWMMMWO,.oNMMMMMMM
+MMMMMMNx.'xWMMW0;.:kl.,0MMMMWkc'.dXO,.'..lNMMMMXo.;0WMMMMMMM
+MMMMMMMXc.;KMMMWO;....dNMMMMWd'.'OMWO:..cKWMMMM0,.lNMMMMMMMM
+MMMMMMMWO,.oXMMMWO,  ;0WMMMMNo..cKMMMX0OXMMMMMWx..kWMMMMMMMM
+MMMMMMMMNo.'OMMMMXl. .,lxKNMWXO0XWMMMMMMMMMMMMK:.cKMMMMMMMMM
+MMMMMMMMW0;.lXMMXo.'ldl;'':d0XNWMMMMMMMMMMMMMMO'.dWMMMMMMMMM
+MMMMMMMMMWx..kWM0,.lNMWN0d:,',;cok0XNWWWWWWWWMk..xMMMMMMMMMM
+MMMMMMMMMM0;.lXMXc.;0WMMMMWXOol:,,,,;;;:::clokd..xMMMMMMMMMM
+MMMMMMMMMMXc.:KWW0:.;kNMMMMMMWWWNX0kxoollllc,.. .dWMMMMMMMMM
+MMMMMMMMMMXl.:KWMWKo'.cONMMMMMMMMMMMMMMMMMMWXd' .oWMMMMMMMMM
+MMMMMMMMMMXl.;0WMMMW0l'.;okKNWMMMMMMMMMMMMMMMNo..dWMMMMMMMMM
+MMMMMMMMMMNd.,OWMMMMMWKkc,'';codkOKNWWWWWMMMMMx..xMMMMMMMMMM
+MMMMMMMMMMWk..xWMMMMMMMMWX0d'  .',,,;::clkNMMWd.'OMMMMMMMMMM
+MMMMMMMMMMMK:.:0WMMMMMMMMMW0,.'l0KOxollc:xNMWO,.lXMMMMMMMMMM
+MMMMMMMMMMMW0:.:0WMMMMMMMMNx.'lkWMMMMMMWWWMW0:.:0MMMMMMMMMMM
+MMMMMMMMMMMMW0c.'dKWMMMMMMNd.,dOWMMMMMMMMWXx,.:0WMMMMMMMMMMM
+MMMMMMMMMMMMMMNx;.,oONWMMMNk'.:xNMMMMMWN0d;.,dXWMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMXkc'',cdOKKO:..,xKX0Oxl;'':xKWMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMWKkl:,'',,'.  .','',:lkKNMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMWNKkdl::;;;:coxOKXWMMMMMMMMMMMMMMMMMMMM
+Made By: William Tanardi
+-->
